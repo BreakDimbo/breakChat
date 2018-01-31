@@ -1,0 +1,17 @@
+bin
+pkg
+
+*.out
+*.log
+
+*.swap
+*.bk
+.DS_Store
+
+src/*
+!src/bChat/
+.idea/
+.vscode/
+release/
+*.bak_*
+dump.rdb
