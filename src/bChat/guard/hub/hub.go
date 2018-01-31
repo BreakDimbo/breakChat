@@ -44,7 +44,7 @@ func init() {
 		launchpad: make(map[string]*Eva),
 	}
 
-	GlobalHub.run()
+	go GlobalHub.run()
 }
 
 func (h *Hub) run() {
