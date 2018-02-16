@@ -9,6 +9,7 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
+// TODO: 使用状态机，控制客户端状态
 const (
 	// Time allowed to write a message to the peer.
 	writeWait = 10 * time.Second
@@ -114,6 +115,8 @@ func (e *Eva) Absorbing() {
 			}
 			break
 		}
+
+		// TODO: 定义消息协议，使用 json 传输消息。
 		message = bytes.TrimSpace(bytes.Replace(message, newline, space, -1))
 		m := &Message{
 			EvaUID: e.uid,

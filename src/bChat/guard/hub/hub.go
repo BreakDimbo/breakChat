@@ -31,7 +31,7 @@ func (h *Hub) Unload(e *Eva) {
 	h.unload <- e
 }
 
-// Transport unregister client
+// Transport transfer message to hub
 func (h *Hub) Transport(msg *Message) {
 	h.transport <- msg
 }

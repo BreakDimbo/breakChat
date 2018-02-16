@@ -7,6 +7,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// NewRouter 路由配置
 func NewRouter() http.Handler {
 	router := mux.NewRouter()
 
